@@ -31,23 +31,15 @@ struct TransactionsListView: View {
     }
     
     private var transactionsRows: some View {
-        ForEach(store.transactions.indices, id: \.self) { index in
-            
-            let transaction = store.transactions[index]
-            
+        ForEach(store.transactions) { transaction in
             NavigationLink {
                 TransactionDetailsView(
-                    transaction: Binding(
-                        get: {
-                            store.transactions[index]
-                        },
-                        set: { newValue in
-                            store.transactions[index] = newValue
-                        }
-                    )
+                    transaction: binding(for: transaction)
                 )
             } label: {
-                transactionRow(transaction)
+                transactionRow(
+                    store.transactions.first { $0.id == transaction.id } ?? transaction
+                )
             }
             .listRowSeparator(.hidden)
             .listRowBackground(Color.clear)
@@ -55,6 +47,19 @@ struct TransactionsListView: View {
                 loadMoreIfNeeded(currentTransaction: transaction)
             }
         }
+    }
+    
+    private func binding(for transaction: Transaction) -> Binding<Transaction> {
+        Binding(
+            get: {
+                store.transactions.first { $0.id == transaction.id } ?? transaction
+            },
+            set: { updatedTransaction in
+                if let index = store.transactions.firstIndex(where: { $0.id == updatedTransaction.id }) {
+                    store.transactions[index] = updatedTransaction
+                }
+            }
+        )
     }
     
     private var balanceHeader: some View {
