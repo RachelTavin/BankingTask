@@ -6,23 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A07686D2FBDDB1B004C1D38 /* BankingDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 3A07686C2FBDDB1B004C1D38 /* BankingDesignSystem */; };
+		3A7515862FC30A6C00B3B286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7515852FC30A6C00B3B286 /* ContentView.swift */; };
+		3A7515872FC30A6C00B3B286 /* BankingTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7515842FC30A6C00B3B286 /* BankingTaskApp.swift */; };
+		3A80B4C02FBDE53600FCD2B5 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80B4BF2FBDE53300FCD2B5 /* Transaction.swift */; };
+		3A80B4C22FBE002200FCD2B5 /* TransactionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80B4C12FBE001F00FCD2B5 /* TransactionsService.swift */; };
+		3A80B4C42FBE005B00FCD2B5 /* TransactionsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80B4C32FBE005A00FCD2B5 /* TransactionsStore.swift */; };
+		3A80B4C62FBE28D000FCD2B5 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80B4C52FBE28CE00FCD2B5 /* TransactionsListView.swift */; };
+		3A80B4C82FBF237400FCD2B5 /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80B4C72FBF237200FCD2B5 /* TransactionDetailsView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3A07685A2FBDC77F004C1D38 /* BankingTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A07686A2FBDDB0E004C1D38 /* BankingDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BankingDesignSystem; sourceTree = "<group>"; };
+		3A7515842FC30A6C00B3B286 /* BankingTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingTaskApp.swift; sourceTree = "<group>"; };
+		3A7515852FC30A6C00B3B286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A75158D2FC30D2300B3B286 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A80B4BF2FBDE53300FCD2B5 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		3A80B4C12FBE001F00FCD2B5 /* TransactionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsService.swift; sourceTree = "<group>"; };
+		3A80B4C32FBE005A00FCD2B5 /* TransactionsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsStore.swift; sourceTree = "<group>"; };
+		3A80B4C52FBE28CE00FCD2B5 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		3A80B4C72FBF237200FCD2B5 /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		3A07685C2FBDC77F004C1D38 /* BankingTask */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BankingTask;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3A0768572FBDC77F004C1D38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A07686D2FBDDB1B004C1D38 /* BankingDesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +45,9 @@
 		3A0768512FBDC77F004C1D38 = {
 			isa = PBXGroup;
 			children = (
-				3A07685C2FBDC77F004C1D38 /* BankingTask */,
+				3A75158D2FC30D2300B3B286 /* README.md */,
+				3A07686A2FBDDB0E004C1D38 /* BankingDesignSystem */,
+				3A7515832FC30A0500B3B286 /* BankingTask */,
 				3A07685B2FBDC77F004C1D38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,60 @@
 				3A07685A2FBDC77F004C1D38 /* BankingTask.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3A7515832FC30A0500B3B286 /* BankingTask */ = {
+			isa = PBXGroup;
+			children = (
+				3A75158C2FC30B0A00B3B286 /* Services */,
+				3A75158B2FC30AFF00B3B286 /* Stores */,
+				3A75158A2FC30AEF00B3B286 /* Models */,
+				3A7515892FC30AE600B3B286 /* Views */,
+				3A7515882FC30ACA00B3B286 /* App */,
+			);
+			path = BankingTask;
+			sourceTree = "<group>";
+		};
+		3A7515882FC30ACA00B3B286 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3A7515842FC30A6C00B3B286 /* BankingTaskApp.swift */,
+				3A7515852FC30A6C00B3B286 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3A7515892FC30AE600B3B286 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A80B4C72FBF237200FCD2B5 /* TransactionDetailsView.swift */,
+				3A80B4C52FBE28CE00FCD2B5 /* TransactionsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A75158A2FC30AEF00B3B286 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A80B4BF2FBDE53300FCD2B5 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A75158B2FC30AFF00B3B286 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				3A80B4C32FBE005A00FCD2B5 /* TransactionsStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		3A75158C2FC30B0A00B3B286 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A80B4C12FBE001F00FCD2B5 /* TransactionsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +129,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				3A07685C2FBDC77F004C1D38 /* BankingTask */,
-			);
 			name = BankingTask;
 			packageProductDependencies = (
+				3A07686C2FBDDB1B004C1D38 /* BankingDesignSystem */,
 			);
 			productName = BankingTask;
 			productReference = 3A07685A2FBDC77F004C1D38 /* BankingTask.app */;
@@ -94,6 +161,9 @@
 			);
 			mainGroup = 3A0768512FBDC77F004C1D38;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3A07686B2FBDDB1B004C1D38 /* XCLocalSwiftPackageReference "BankingDesignSystem" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A07685B2FBDC77F004C1D38 /* Products */;
 			projectDirPath = "";
@@ -119,6 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A80B4C82FBF237400FCD2B5 /* TransactionDetailsView.swift in Sources */,
+				3A7515862FC30A6C00B3B286 /* ContentView.swift in Sources */,
+				3A7515872FC30A6C00B3B286 /* BankingTaskApp.swift in Sources */,
+				3A80B4C62FBE28D000FCD2B5 /* TransactionsListView.swift in Sources */,
+				3A80B4C42FBE005B00FCD2B5 /* TransactionsStore.swift in Sources */,
+				3A80B4C22FBE002200FCD2B5 /* TransactionsService.swift in Sources */,
+				3A80B4C02FBDE53600FCD2B5 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +333,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,8 +360,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +397,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3A07686B2FBDDB1B004C1D38 /* XCLocalSwiftPackageReference "BankingDesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = BankingDesignSystem;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A07686C2FBDDB1B004C1D38 /* BankingDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BankingDesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3A0768522FBDC77F004C1D38 /* Project object */;
 }
