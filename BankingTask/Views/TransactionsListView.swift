@@ -63,7 +63,7 @@ struct TransactionsListView: View {
                 .font(DSTypography.medium)
                 .foregroundStyle(.white.opacity(0.8))
             
-            Text(store.totalBalance, format: .currency(code: "USD"))
+            Text(store.totalBalance, format: .currency(code: "USD").presentation(.narrow))
                 .font(DSTypography.medium)
                 .foregroundStyle(.white)
             

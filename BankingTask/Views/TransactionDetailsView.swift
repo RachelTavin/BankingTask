@@ -49,7 +49,7 @@ struct TransactionDetailsView: View {
                         .font(.system(size: DSSpacing.iconMedium))
                 }
 
-            Text(transaction.amount, format: .currency(code: "USD"))
+            Text(transaction.amount, format: .currency(code: "USD").presentation(.narrow))
                 .font(DSTypography.medium)
                 .foregroundStyle(transaction.isIncome ? DSColors.income : DSColors.expense)
 
